@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
 /* ================= PÁGINA INICIAL ================= */
 .pagina-inicial  {
-  background-image: url(/assets/img/pagina-inicial.png);
+  background-image: url("/static/img/pagina-inicial.png");
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
@@ -45,6 +46,7 @@
   width:100px;
   margin-left: 10px;
 }
+
 .pagina-inicial .content-container {
   display: flex;
   flex-direction: column;
@@ -109,9 +111,10 @@
 ul li a:hover {
   background-color: #294523;
 }
+
 /*================== PÁGINA DE LOGIN ===================*/
 .pagina-login {
-  background-image: url(/assets/img/pagina-login.png);
+  background-image: url("/static/img/pagina-login.png");
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -126,7 +129,7 @@ ul li a:hover {
 .login-container {
   width: 50%;
   max-width: 400px;
-  background-color:#2945237c  ;
+  background-color:#2945237c;
   padding: 30px;
   border-radius: 15px;
   color: #ffffff;
@@ -149,7 +152,6 @@ ul li a:hover {
   text-align: left;
   font-weight: bold;
   margin-bottom: 5px;
-
 }
 
 .login-container input {
@@ -178,9 +180,117 @@ ul li a:hover {
   background-color: #294523;
 }
 
+/* ================= PÁGINA DE CADASTRO ================= */
+.pagina-login {
+  background-image: url("/static/img/pagina-login.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Slackey', cursive;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(41, 69, 35, 0.75); /* transparência consistente */
+  padding: 30px;
+  border-radius: 15px;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-container fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.login-container legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(28, 80, 63, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  margin: 20px auto 0 auto;
+  width: 50%;
+  padding: 12px;
+  background-color: #33562c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #294523;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-container p a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.login-container p a:hover {
+  color: #d4ffd4;
+}
+
+/*=============FLASH===================*/
+.flash {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.flash.success {
+  background-color: #2b5329;
+  color: white;
+}
+
+.flash.danger {
+  background-color: #c0392b;
+  color: white;
+}
+
 /* ================= PÁGINA DE MÓDULOS ================= */
 .pagina-modulos {
-  background-image: url(/assets/img/pagina-modulos.png);
+  background-image: url("/static/img/pagina-modulos.png");
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;

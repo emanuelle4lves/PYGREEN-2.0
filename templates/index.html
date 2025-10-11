@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
   <title>Pygreen</title>
-  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 <body class="pagina-inicial">
   <header>
-
     <div class="header-container">
-      
-      <img class="logo-pygreen" src="/static/" alt="logo" />
-      <img class="pygreen" src="static/nome_pygreen.png" alt="Pygreen Nome" height="50"/>
-
-      <nav class="navegador"></nav>
-
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Sobre</a></li>
-      </ul>
-
+      <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
+      <img class="pygreen" src="{{ url_for('static', filename='img/nome_pygreen.png') }}" alt="Pygreen Nome" height="50"/>
+      <nav class="navegador">
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </nav>
     </div>
-
   </header>
 
   <div class="content-container">
-
     <h1 class="bemvindo">Seja Bem-Vindo!</h1>
-
     <p class="text-entrada1">
       Prepare-se para dar os primeiros passos na criação de sites e mergulhar na
       introdução à linguagem Python! Neste mundo cheio de aventuras e
@@ -39,9 +30,7 @@
       suas primeiras páginas web e começar a dominar Python. Desperte o Dev
       Mestre que há em você e comece sua jornada no universo da tecnologia!
     </p>
-
-    <a href="login.html" class="botao">ENTRE</a>
-
+    <a class="botao" href="{{ url_for('login') }}">ENTRE</a>
   </div>
 </body>
 </html>
