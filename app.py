@@ -8,10 +8,10 @@ app.secret_key = "chave_secreta"
 # --------------------- Banco ---------------------
 def ConectarBD():
     try:
-        cnx = connect(
+       cnx = connect(
             user='root',
             password='1406',
-            host='127.0.0.1',
+             host='127.0.0.1',
             database='pygreen2'
         )
         return cnx
