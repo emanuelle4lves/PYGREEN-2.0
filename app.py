@@ -19,6 +19,7 @@ def ConectarBD():
         print(f"Erro ao conectar ao banco: {e}")
         return None
 
+
 def InserirAlterarRemover(sql, dados):
     cnx = ConectarBD()
     if cnx is None:
