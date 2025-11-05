@@ -8,16 +8,17 @@ app.secret_key = "chave_secreta"
 # --------------------- Banco ---------------------
 def ConectarBD():
     try:
-       cnx = connect(
+        cnx = connect(
             user='root',
             password='1406',
-             host='127.0.0.1',
+            host='127.0.0.1',
             database='pygreen2'
         )
         return cnx
     except Error as e:
         print(f"Erro ao conectar ao banco: {e}")
         return None
+
 
 def InserirAlterarRemover(sql, dados):
     cnx = ConectarBD()
