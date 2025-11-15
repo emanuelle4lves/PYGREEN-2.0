@@ -290,42 +290,29 @@ ul li a:hover {
 
 /* ================= PÁGINA DE MÓDULOS ================= */
 .pagina-modulos {
-  background-image: url("/static/img/pagina-modulos.png");
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+background-image: url("../img/pagina-modulos.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.pagina-modulos header {
-  padding: 20px;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.pagina-modulos main {
-  position: relative;
-  height: 100vh;
-}
-
-.pagina-modulos .path {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .pagina-modulos .modulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 80%;
+  max-width: 1000px;
 }
 
 .pagina-modulos .modulo {
-  position: absolute;
   text-align: center;
-  width: 120px;
 }
+
 
 .pagina-modulos .modulo a {
   text-decoration: none;

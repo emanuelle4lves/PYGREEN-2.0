@@ -5,20 +5,19 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 app.secret_key = "chave_secreta"
 
-# --------------------- Banco ---------------------
+# --------------------- Conexão com o Banco ---------------------
 def ConectarBD():
     try:
         cnx = connect(
             user='root',
-            password='labinfo',
+            password='1406',
             host='127.0.0.1',
-            database='pygreen2_usuarios'
+            database='pygreen2'
         )
         return cnx
     except Error as e:
         print(f"Erro ao conectar ao banco: {e}")
         return None
-
 
 def InserirAlterarRemover(sql, dados):
     cnx = ConectarBD()
@@ -62,7 +61,7 @@ def cadastro():
         email = request.form['email']
         senha = request.form['senha']
 
-        # verifica se email já existe
+        # Verifica se email já existe
         sql_check = "SELECT id FROM usuarios WHERE email=%s"
         if ConsultarBD(sql_check, (email,)):
             flash("Email já cadastrado!", "danger")
@@ -111,17 +110,14 @@ def logout():
 
 @app.route('/niveis')
 def niveis():
-    if 'usuario' not in session:
-        flash("Faça login para acessar esta página.", "danger")
-        return redirect(url_for('login'))
     return render_template('niveis.html')
 
 @app.route('/modulo/<int:num>')
 def modulo(num):
-    if 'usuario' not in session:
-        flash("Faça login para acessar esta página.", "danger")
-        return redirect(url_for('login'))
-    return f"Você entrou no Módulo {num}"
+    if num < 1 or num > 5:
+        return "Módulo não encontrado", 404
+    return render_template(f'modulo{num}.html', num=num)
 
+# --------------------- Executar ---------------------
 if __name__ == '__main__':
     app.run(debug=True)
