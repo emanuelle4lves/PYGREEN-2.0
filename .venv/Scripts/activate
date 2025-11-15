@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\maria\Downloads\pygreen-2.0--com-banco-\.venv"
+VIRTUAL_ENV="C:\Users\maria\Downloads\PYGREEN-2.0\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
