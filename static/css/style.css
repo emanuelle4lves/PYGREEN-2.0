@@ -108,28 +108,26 @@
   text-decoration: none;
 }
 
-ul li a:hover {
+.pagina-inicial ul li a:hover {
   background-color: #294523;
 }
 
 /*================== PÁGINA DE LOGIN ===================*/
 .pagina-login {
   background-image: url("/static/img/pagina-login.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: 'Slackey', cursive;
-  color: white;
-  min-height: 80vh;
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.pagina-login, header  {
+.pagina-login header  {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   background: #33562C;
   position: fixed;
@@ -177,83 +175,14 @@ ul li a:hover {
   text-decoration: none;
 }
 
-ul li a:hover {
+.pagina-login ul li a:hover {
   background-color: #294523;
-}
-
-.login-container {
-  width: 50%;
-  max-width: 400px;
-  background-color:#2945237c;
-  padding: 30px;
-  border-radius: 15px;
-  color: #ffffff;
-  box-shadow: 0 0 20px rgba(133, 129, 129, 0.1);
-}
-
-.login-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.login-container fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.login-container label {
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #1c503f71;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-.login-container button {
-  margin: 15px auto 0 auto; 
-  width: 50%;    
-  padding: 12px;
-  background-color: #33562c;
-  color: rgb(255, 253, 253);
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: block; 
-}
-
-.login-container button:hover {
-  background-color: #294523;
-}
-
-/* ================= PÁGINA DE CADASTRO ================= */
-.pagina-login {
-  background-image: url("/static/img/pagina-login.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: 'Slackey', cursive;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .login-container {
   width: 90%;
   max-width: 400px;
-  background-color: rgba(41, 69, 35, 0.75); /* transparência consistente */
+  background-color: rgba(41, 69, 35, 0.75);
   padding: 30px;
   border-radius: 15px;
   color: #ffffff;
@@ -342,9 +271,8 @@ ul li a:hover {
   color: white;
 }
 
-/* =================== MODULOS =================== */
+/* =================== PÁGINA DE MÓDULOS =================== */
 .pagina-modulos {
-<<<<<<< HEAD
   background-image: url("../img/pagina-modulos.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -352,91 +280,9 @@ ul li a:hover {
   padding: 20px;
 }
 
-/* =================== NAVBAR =================== */
-.topo {
-  margin-bottom: 30px;
-=======
-  background-color: #f8eddc;
-  background-repeat: repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Slackey', cursive;
-  color: white;
-  min-height: 80vh;
-  margin: 0;
-}
-
-
-.pagina-modulos .modulos {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: none;
-  display: flex;
-  margin-left: auto;
->>>>>>> 552741059b5150d828bd46567d5f397369f2f964
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-  background: rgba(255, 255, 255, 0.75);
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2b5329;
-}
-
-<<<<<<< HEAD
-.usuario {
-  font-size: 1.1rem;
-  color: #2b5329;
-}
-
-/* =================== GRID DE MÓDULOS =================== */
-.conteudo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 150px); /* centraliza abaixo da navbar */
-}
-@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
-
-/* ================= PÁGINA INICIAL ================= */
-.pagina-inicial  {
-  background-image: url("/static/img/pagina-inicial.png");
-  background-repeat: repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Slackey', cursive;
-  color: white;
-  min-height: 80vh;
-  margin: 0;
-}
-
-.pagina-inicial header  {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  background: #33562C;
-=======
-.pagina-modulos header  {
+.pagina-modulos header {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   background: #b1a88c;
->>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   position: fixed;
   width: 100%;
   height: 60px;
@@ -445,285 +291,43 @@ ul li a:hover {
   z-index: 1000;
 }
 
-<<<<<<< HEAD
-.pagina-inicial .header-container {
-=======
 .pagina-modulos .header-container {
->>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   display: flex;
   align-items: center;
   height: 100%;
   padding-left: 20px;
 }
 
-<<<<<<< HEAD
-.pagina-inicial .logo-pygreen {
-=======
 .pagina-modulos .logo-pygreen {
->>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   max-width: 100%;
   height: auto;
   width: 50px;
 }
 
-<<<<<<< HEAD
-.pagina-inicial .pygreen {
-=======
 .pagina-modulos .pygreen {
->>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   max-width: 100%;
   height: auto;
   width:100px;
   margin-left: 10px;
 }
-<<<<<<< HEAD
 
-.pagina-inicial .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 100px;
-  padding: 20px;
-}
-
-.pagina-inicial .bemvindo {
-  font-size: clamp(2rem, 5vw, 4rem);
-  margin-bottom: 10px;
-}
-
-.pagina-inicial .text-entrada1 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  margin-bottom: 20px;
-  max-width: 800px;
-}
-
-.pagina-inicial p {
-  width: auto;
-  max-width: 1000px;
-}
-
-.pagina-inicial .botao {
-  background-color: #33562C;
-  border: none;
-  color: white;
-  padding: 30px 50px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2rem;
-  border-radius: 50px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin-top: 0px;
-}
-
-.pagina-inicial .botao:hover {
-  background-color: #294523;
-}
-
-.pagina-inicial ul {
-=======
 .pagina-modulos nav ul {
->>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background: none;
   display: flex;
   margin-left: auto;
 }
 
-<<<<<<< HEAD
-.pagina-inicial ul li a {
 .pagina-modulos nav ul li a {
-
   color: white;
   text-align: center;
   padding: 14px 15px;
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-ul li a:hover {
+.pagina-modulos nav ul li a:hover {
   background-color: #294523;
-}
-
-/*================== PÁGINA DE LOGIN ===================*/
-.pagina-login {
-  background-image: url("/static/img/pagina-login.png");
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-
-  /* Centralização com Flexbox */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-container {
-  width: 50%;
-  max-width: 400px;
-  background-color:#2945237c;
-  padding: 30px;
-  border-radius: 15px;
-  color: #ffffff;
-  box-shadow: 0 0 20px rgba(133, 129, 129, 0.1);
-}
-
-.login-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.login-container fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.login-container label {
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #1c503f71;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-.login-container button {
-  margin: 15px auto 0 auto; 
-  width: 50%;    
-  padding: 12px;
-  background-color: #33562c;
-  color: rgb(255, 253, 253);
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: block; 
-}
-
-.login-container button:hover {
-  background-color: #294523;
-}
-
-/* ================= PÁGINA DE CADASTRO ================= */
-.pagina-login {
-  background-image: url("/static/img/pagina-login.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: 'Slackey', cursive;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-container {
-  width: 90%;
-  max-width: 400px;
-  background-color: rgba(41, 69, 35, 0.75); /* transparência consistente */
-  padding: 30px;
-  border-radius: 15px;
-  color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.login-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.login-container fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.login-container legend {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.login-container label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid rgba(28, 80, 63, 0.5);
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-.login-container button {
-  margin: 20px auto 0 auto;
-  width: 50%;
-  padding: 12px;
-  background-color: #33562c;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-container button:hover {
-  background-color: #294523;
-}
-
-.login-container p {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.login-container p a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.login-container p a:hover {
-  color: #d4ffd4;
-}
-
-/*=============FLASH===================*/
-.flash {
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.flash.success {
-  background-color: #ccddcb;
-  color: white;
-}
-
-.flash.danger {
-  background-color: #c0392b;
-  color: white;
 }
 
 /* =================== GRID DE MÓDULOS =================== */
@@ -745,57 +349,36 @@ ul li a:hover {
   position: relative;
 }
 
-/* Remover fundos */
 .modulo a,
 .modulo,
 .modulo * {
   background: none !important;
 }
 
-/* TRANSFORMAÇÃO PADRÃO */
 .modulo {
   transition: transform 0.25s ease;
 }
 
-/* =================== ONDA BONITA =================== */
-
-/* Linha superior: 1 – 3 – 5 */
 .modulo:nth-child(1) { grid-column: 1; grid-row: 1; --offset: 0px; }
 .modulo:nth-child(3) { grid-column: 2; grid-row: 1; --offset: -10px; }
 .modulo:nth-child(5) { grid-column: 3; grid-row: 1; --offset: 0px; }
 
-/* Linha inferior: 2 – 4 */
-.modulo:nth-child(2) {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-  justify-self: center;
-  --offset: 10px;
-}
+.modulo:nth-child(2) { grid-column: 1 / span 2; grid-row: 2; justify-self: center; --offset: 10px; }
+.modulo:nth-child(4) { grid-column: 2 / span 2; grid-row: 2; justify-self: center; --offset: 10px; }
 
-.modulo:nth-child(4) {
-  grid-column: 2 / span 2;
-  grid-row: 2;
-  justify-self: center;
-  --offset: 10px;
-}
-
-/* APLICAR OFFSET NORMAL */
 .modulo {
   transform: translateY(var(--offset));
 }
 
-/* HOVER FUNCIONANDO EM TODOS */
 .modulo:hover {
   transform: translateY(var(--offset)) scale(1.1);
 }
 
-/* Imagens */
 .modulo img {
   width: 170px;
   flex-shrink: 0;
 }
 
-/* Texto */
 figcaption {
   margin-top: 12px;
   font-weight: bold;
@@ -805,13 +388,10 @@ figcaption {
 
 /* =================== RESPONSIVIDADE =================== */
 @media (max-width: 700px) {
-
   .modulos {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-
-  /* offsets da onda no mobile */
   .modulo:nth-child(1) { --offset: 20px; }
   .modulo:nth-child(2) { --offset: 0px; }
   .modulo:nth-child(3) { --offset: -20px; }
@@ -820,16 +400,6 @@ figcaption {
 }
 
 @media (max-width: 480px) {
-  .modulo img {
-    width: 130px;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-=======
-nav ul li a:hover {
-  background-color: #294523;
->>>>>>> 552741059b5150d828bd46567d5f397369f2f964
+  .modulo img { width: 130px; }
+  .nav { flex-direction: column; gap: 10px; }
 }
