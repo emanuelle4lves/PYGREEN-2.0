@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body class="pagina-modulos">
+<<<<<<< HEAD
 
   <!-- NAVBAR / HEADER -->
   <header class="topo">
@@ -16,6 +17,23 @@
   </header>
 
 <main class="conteudo">
+=======
+  <header>
+    <div class="header-container">
+      <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
+      <img class="pygreen" src="{{ url_for('static', filename='img/nome_pygreen.png') }}" alt="Pygreen Nome" height="50"/>
+      <nav class="navegador">
+        <ul class = "nav">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   <ul class="modulos">
     {% for i in range(1,6) %}
     <li class="modulo">

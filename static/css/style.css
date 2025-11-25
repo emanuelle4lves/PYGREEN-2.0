@@ -115,15 +115,70 @@ ul li a:hover {
 /*================== PÁGINA DE LOGIN ===================*/
 .pagina-login {
   background-image: url("/static/img/pagina-login.png");
-  font-family: Arial, sans-serif;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Slackey', cursive;
+  color: white;
+  min-height: 80vh;
+  margin: 0;
+}
+
+
+.pagina-login, header  {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #33562C;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.pagina-login .header-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.pagina-login .logo-pygreen {
+  max-width: 100%;
+  height: auto;
+  width: 50px;
+}
+
+.pagina-login .pygreen {
+  max-width: 100%;
+  height: auto;
+  width:100px;
+  margin-left: 10px;
+}
+
+.pagina-login ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-
-  /* Centralização com Flexbox */
+  overflow: hidden;
+  background: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+}
+
+.pagina-login ul li a {
+  color: white;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #294523;
 }
 
 .login-container {
@@ -190,7 +245,6 @@ ul li a:hover {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +344,7 @@ ul li a:hover {
 
 /* =================== MODULOS =================== */
 .pagina-modulos {
+<<<<<<< HEAD
   background-image: url("../img/pagina-modulos.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -300,6 +355,31 @@ ul li a:hover {
 /* =================== NAVBAR =================== */
 .topo {
   margin-bottom: 30px;
+=======
+  background-color: #f8eddc;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Slackey', cursive;
+  color: white;
+  min-height: 80vh;
+  margin: 0;
+}
+
+
+.pagina-modulos .modulos {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  display: flex;
+  margin-left: auto;
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
 }
 
 .nav {
@@ -318,6 +398,7 @@ ul li a:hover {
   color: #2b5329;
 }
 
+<<<<<<< HEAD
 .usuario {
   font-size: 1.1rem;
   color: #2b5329;
@@ -351,6 +432,11 @@ ul li a:hover {
 .pagina-inicial header  {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   background: #33562C;
+=======
+.pagina-modulos header  {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #b1a88c;
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   position: fixed;
   width: 100%;
   height: 60px;
@@ -359,25 +445,38 @@ ul li a:hover {
   z-index: 1000;
 }
 
+<<<<<<< HEAD
 .pagina-inicial .header-container {
+=======
+.pagina-modulos .header-container {
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   display: flex;
   align-items: center;
   height: 100%;
   padding-left: 20px;
 }
 
+<<<<<<< HEAD
 .pagina-inicial .logo-pygreen {
+=======
+.pagina-modulos .logo-pygreen {
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   max-width: 100%;
   height: auto;
   width: 50px;
 }
 
+<<<<<<< HEAD
 .pagina-inicial .pygreen {
+=======
+.pagina-modulos .pygreen {
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   max-width: 100%;
   height: auto;
   width:100px;
   margin-left: 10px;
 }
+<<<<<<< HEAD
 
 .pagina-inicial .content-container {
   display: flex;
@@ -424,6 +523,9 @@ ul li a:hover {
 }
 
 .pagina-inicial ul {
+=======
+.pagina-modulos nav ul {
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -433,13 +535,17 @@ ul li a:hover {
   margin-left: auto;
 }
 
+<<<<<<< HEAD
 .pagina-inicial ul li a {
+.pagina-modulos nav ul li a {
+
   color: white;
   text-align: center;
   padding: 14px 15px;
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 ul li a:hover {
   background-color: #294523;
 }
@@ -722,4 +828,8 @@ figcaption {
     flex-direction: column;
     gap: 10px;
   }
+=======
+nav ul li a:hover {
+  background-color: #294523;
+>>>>>>> 552741059b5150d828bd46567d5f397369f2f964
 }
