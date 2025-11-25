@@ -6,20 +6,28 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body class="pagina-modulos">
-  <header>
-    <h1>Logo Pygreen</h1>
-    <p>Nome</p>
+
+  <!-- NAVBAR / HEADER -->
+  <header class="topo">
+    <nav class="nav">
+      <div class="logo">Pygreen</div>
+      <div class="usuario">{{ nome_usuario }}</div>
+    </nav>
   </header>
 
+<main class="conteudo">
   <ul class="modulos">
-{% for i in range(1,6) %}
-<li class="modulo">
-  <a href="{{ url_for('modulo', num=i) }}">
-    <img src="{{ url_for('static', filename='img/mudinha-' ~ i ~ '.png') }}" alt="Módulo {{ i }}">
-    <figcaption>Módulo {{ i }}</figcaption>
-  </a>
-</li>
-{% endfor %}
+    {% for i in range(1,6) %}
+    <li class="modulo">
+      <a href="{{ url_for('modulo', num=i) }}">
+        <figure>
+          <img src="{{ url_for('static', filename='img/mudinha-' ~ i ~ '.png') }}" alt="Módulo {{ i }}">
+          <figcaption>Módulo {{ i }}</figcaption>
+        </figure>
+      </a>
+    </li>
+    {% endfor %}
   </ul>
+</main>
 </body>
 </html>
