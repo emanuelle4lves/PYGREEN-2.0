@@ -32,6 +32,19 @@
       {% endif %}
     {% endwith %}
 
+    <!-- TEXTO EXPLICATIVO -->
+    <section class="explicacao-modulos">
+      <h2>Bem-vindo(a) à página de módulos</h2>
+      <p>Aqui você encontrará 5 módulos, cada um abordando uma parte diferente do conteúdo:</p>
+      <ul>
+        <li><strong>Módulo 1:</strong> Lógica</li>
+        <li><strong>Módulo 2:</strong> Noções Básicas de Python</li>
+        <li><strong>Módulo 3:</strong> HTML</li>
+        <li><strong>Módulo 4:</strong> CSS</li>
+        <li><strong>Módulo 5:</strong> Mini Projeto</li>
+      </ul>
+    </section>
+
     <!-- GRID DE MÓDULOS -->
     <ul class="modulos">
       {% for i in range(1,6) %}
@@ -39,7 +52,14 @@
         <a href="{{ url_for('modulo', num=i) }}">
           <figure>
             <img src="{{ url_for('static', filename='img/mudinha-' ~ i ~ '.png') }}" alt="Módulo {{ i }}">
-            <figcaption>Módulo {{ i }}</figcaption>
+            <figcaption>
+              {% if i == 1 %}Lógica
+              {% elif i == 2 %}Noções Básicas de Python
+              {% elif i == 3 %}HTML
+              {% elif i == 4 %}CSS
+              {% elif i == 5 %}Mini Projeto
+              {% endif %}
+            </figcaption>
           </figure>
         </a>
       </li>
@@ -58,5 +78,6 @@
       });
     }, 3000);
   </script>
+  {% include 'footer.html' %}
 </body>
 </html>
