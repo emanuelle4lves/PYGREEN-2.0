@@ -476,7 +476,7 @@ figcaption {
 }
 
 .footer {
-  width: 100%;
+  width: 100.9%; /* Não pergunte, só aceite */
   background-color: #054215e6;
   color: white;
   box-sizing: border-box;
@@ -486,7 +486,7 @@ figcaption {
   flex-direction: column;  
   align-items: center;    
   gap: 10px;             
-  margin: 0;
+  margin: -10px;
 }
 
 .footer a {
