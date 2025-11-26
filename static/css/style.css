@@ -445,11 +445,11 @@
 }
 
 /* POSICIONAMENTO EM ONDA COM TRANSLATE Y */
-.modulo:nth-child(1) { transform: translateY(30px); }
+.modulo:nth-child(1) { transform: translateY(50px); }
 .modulo:nth-child(2) { transform: translateY(0px); }
-.modulo:nth-child(3) { transform: translateY(20px); }
-.modulo:nth-child(4) { transform: translateY(0px); }
-.modulo:nth-child(5) { transform: translateY(30px); }
+.modulo:nth-child(3) { transform: translateY(45px); }
+.modulo:nth-child(4) { transform: translateY(-10px); }
+.modulo:nth-child(5) { transform: translateY(60px); }
 
 .modulo {
   transition: transform 0.25s ease;
