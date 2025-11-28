@@ -629,10 +629,10 @@ figcaption {
   justify-content: flex-start;
   align-items: center;    
   min-height: calc(100vh - 80px); 
-  padding: 100px 20px 20px; /* compensa header fixo */
+  padding: 100px 20px 20px; 
   width: 100%;               
   box-sizing: border-box;
-  text-align: center; /* centraliza textos */
+  text-align: center; 
 }
 
 /* Títulos principais */
@@ -690,10 +690,11 @@ figcaption {
   margin: 15px auto;
   padding-left: 20px;
   line-height: 1.6;
+  list-style-type: none;
 }
 
 .modulo-1 ul li {
-  margin-bottom: 8px;
+  margin: 10px;
 }
 
 /* Blocos de código */
@@ -708,6 +709,7 @@ figcaption {
   font-size: 1rem;
   overflow-x: auto;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  text-align: left;
 }
 
 /* Link de voltar */
@@ -751,5 +753,5 @@ figcaption {
 }
 
 .footer p{
-  color: #162b11;
+  color: #e1f1dd;
 }
