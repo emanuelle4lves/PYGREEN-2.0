@@ -2,11 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Módulo {{ num }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1 - Lógica de Programação</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body class="modulo-1">
+<body class="modulo-{{ num }}">
 
   <header>
     <div class="header-container">
@@ -15,6 +16,7 @@
       <nav class="navegador">
         <ul>
           <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('niveis') }}">Níveis</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
@@ -22,10 +24,143 @@
     </div>
   </header>
 
-  <h1>🌿 Bem-vindo ao Módulo {{ num }}</h1>
-  <p>Aqui vai o conteúdo do módulo {{ num }}.</p>
+  <main class="conteudo-modulo">
 
-  <a href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
+    <h1 class="title-modulos">🌿 Bem-vindo ao Módulo 1</h1>
+
+    <p class="subtitulo-modulo">
+      Aqui começa a evolução do seu raciocínio como programador!  
+      Neste módulo, você vai entender como funciona a base da programação e como transformar ideias em código real.  
+      Cada conceito aprendido aqui te deixará mais próximo do domínio do Python!
+    </p>
+
+    <section>
+
+      <h2>O que é lógica de programação?</h2>
+      <p>
+        A lógica de programação é a capacidade de resolver problemas seguindo passos claros e organizados.
+        É o fundamento de qualquer linguagem de programação, incluindo Python.
+      </p>
+
+      <h2>Como tudo começa: o problema</h2>
+      <p>
+        Todo programa nasce de um problema que precisa ser resolvido. Para isso, criamos um conjunto de passos,
+        chamado de <strong>algoritmo</strong>.
+      </p>
+
+      <h3>Exemplo de algoritmo:</h3>
+      <ul>
+        <li>Receber um número</li>
+        <li>Verificar se ele é maior que 10</li>
+        <li>Exibir o resultado</li>
+      </ul>
+
+      <h2>Os 4 pilares da lógica de programação</h2>
+
+      <h3>1 Entrada de dados</h3>
+      <p>Informações recebidas pelo programa.</p>
+
+      <h3>2 Processamento</h3>
+      <p>Onde o programa “pensa” e aplica as regras.</p>
+
+      <h3>3 Saída</h3>
+      <p>O que o programa mostra: mensagens, valores, resultados.</p>
+
+      <h3>4 Armazenamento (Variáveis)</h3>
+      <p>Locais onde o programa guarda informações temporárias.</p>
+
+      <h3>Exemplo em Python:</h3>
+      <pre>
+idade = 20
+print("Sua idade é:", idade)
+      </pre>
+
+      <h2>Os 3 blocos fundamentais da lógica</h2>
+
+      <h3>1. Sequência</h3>
+      <p>As instruções são executadas de cima para baixo.</p>
+
+      <h3>2. Decisão (condicionais)</h3>
+      <p>O programa escolhe caminhos diferentes.</p>
+      <pre>
+if nota >= 7:
+    print("Aprovado")
+else:
+    print("Reprovado")
+      </pre>
+
+      <h3>3. Repetição (loops)</h3>
+      <p>Repete uma ação várias vezes.</p>
+      <pre>
+contador = 1
+while contador <= 5:
+    print(contador)
+    contador += 1
+      </pre>
+
+      <h2>Transformando lógica em código</h2>
+      <p>
+        Programar é transformar um raciocínio organizado em instruções que o computador pode executar.
+      </p>
+
+      <h2>Exemplo completo</h2>
+      <p>Problema: verificar se uma pessoa é maior de idade.</p>
+      <pre>
+idade = int(input("Digite sua idade: "))
+
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+      </pre>
+
+      <h2>Pensamento Computacional</h2>
+      <p>
+        Pensar como um programador não significa decorar códigos, e sim entender como resolver problemas
+        de forma lógica e eficiente. Isso é chamado de <strong>pensamento computacional</strong>.
+      </p>
+
+      <h3>Os quatro pilares do pensamento computacional:</h3>
+      <ul>
+        <li><strong>1. Decomposição:</strong> dividir um problema grande em partes menores.</li>
+        <li><strong>2. Reconhecimento de padrões:</strong> identificar repetições que podem ser usadas a seu favor.</li>
+        <li><strong>3. Abstração:</strong> ignorar detalhes desnecessários e focar no essencial.</li>
+        <li><strong>4. Algoritmos:</strong> criar passos claros para resolver o problema.</li>
+      </ul>
+
+      <h3>Exemplo simples de decomposição:</h3>
+      <p>Problema: Fazer um bolo.</p>
+      <ul>
+        <li>Separar ingredientes</li>
+        <li>Misturar a massa</li>
+        <li>Colocar no forno</li>
+        <li>Retirar quando estiver pronto</li>
+      </ul>
+
+      <h3>Exemplo aplicado em Python:</h3>
+      <pre>
+      # Problema: Mostrar os números pares de 1 a 10
+
+      for numero in range(1, 11):
+          if numero % 2 == 0:
+              print(numero)
+      </pre>
+
+      <p>
+        Quanto mais você desenvolve o pensamento computacional, mais fácil se torna aprender qualquer linguagem de programação — 
+        inclusive Python.
+      </p>
+
+      <p><strong>Dominar a lógica é o passo mais importante para se tornar um bom programador.</strong></p>
+
+    </section>
+
+    <a class="voltar-niveis" href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
+
+  </main>
+
   {% include 'footer.html' %}
+
 </body>
 </html>
+

@@ -365,7 +365,7 @@
   margin-left: 10px;
 }
 
-.pagina-modulos nav ul {
+.pagina-modulos .navegador ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -373,14 +373,14 @@
   margin-left: auto;
 }
 
-.pagina-modulos nav ul li a {
+.pagina-modulos .navegador ul li a {
   color: white;
   text-align: center;
   padding: 14px 15px;
   text-decoration: none;
 }
 
-.pagina-modulos nav ul li a:hover {
+.pagina-modulos .navegador ul li a:hover {
   background-color: #b5d2b1;
 }
 
@@ -619,4 +619,23 @@ figcaption {
 
 .modulo-1 nav ul li a:hover {
   background-color: #b5d2b1;
+}
+
+.title-modulos{
+  text-align: center;
+  font-size: 5vh;
+  margin: 20px;
+}
+
+.subtitulo-modulo{
+  max-width: 50%;
+  text-align: center;
+  display: flex;
+
+}
+
+.modulo-1 h1 h2{
+  display: flex;
+  text-align: center;
+  margin: 20px;
 }
