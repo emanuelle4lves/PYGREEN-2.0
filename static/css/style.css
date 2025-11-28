@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -18,10 +18,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  max-height: 100vh;
   margin: 0;
   padding-top: 80px;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 .pagina-inicial header  {
@@ -98,7 +99,7 @@ body {
   background-color: #294523;
 }
 
-.pagina-inicial ul {
+.pagina-inicial .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -108,14 +109,14 @@ body {
   margin-left: auto;
 }
 
-.pagina-inicial ul li a {
+.pagina-inicial .navbar li a {
   color: white;
   text-align: center;
   padding: 14px 15px;
   text-decoration: none;
 }
 
-.pagina-inicial ul li a:hover {
+.pagina-inicial .navbar li a:hover {
   background-color: #294523;
 }
 
