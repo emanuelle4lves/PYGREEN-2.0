@@ -15,7 +15,7 @@
         <ul>
           <li><a href="{{ url_for('index') }}">Home</a></li>
           <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="{{ url_for('sobre')}}">Sobre</a></li>
         </ul>
       </nav>
     </div>
@@ -71,7 +71,7 @@ projeto-final/
 
     <p>Este é o primeiro passo! No próximo ano, o site irá evoluir usando <strong>Python + Flask</strong>.</p>
 
-    <a href="{{ url_for('niveis') }}" class="voltar">⬅ Voltar aos níveis</a>
+    <a href="{{ url_for('niveis') }}" class="voltar-niveis">⬅ Voltar aos níveis</a>
   </main>
 
   {% include 'footer.html' %}
