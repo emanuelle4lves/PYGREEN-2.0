@@ -2,10 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Módulo {{ num }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo-3 — Introdução à HTML</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
+
+<body class="modulo-{{ num }}">
 
   <header>
     <div class="header-container">
@@ -14,6 +16,7 @@
       <nav class="navegador">
         <ul>
           <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('niveis') }}">Níveis</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
@@ -21,10 +24,152 @@
     </div>
   </header>
 
-  <h1>🌿 Bem-vindo ao Módulo {{ num }}</h1>
-  <p>Aqui vai o conteúdo do módulo {{ num }}.</p>
+  <main class="conteudo-modulo">
+    <h1 class="title-modulos">🌿 Bem-vindo ao Módulo 3</h1>
 
-  <a href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
+    <p class="subtitulo-modulo">
+      Você está prestes a aprender como funcionam as páginas da internet!  
+      O HTML é a parte responsável por estruturar tudo o que aparece na tela: textos, imagens, listas, botões e muito mais.
+      Neste módulo, vamos construir o seu primeiro conhecimento sobre desenvolvimento web.
+    </p>
+
+    <section>
+
+      <h2>O que é HTML?</h2>
+      <p>
+        HTML significa <strong>HyperText Markup Language</strong>.  
+        É a linguagem usada para criar o "esqueleto” de um site, ou seja, definir onde vai cada coisa.
+      </p>
+
+      <p>
+        Pense no HTML como a estrutura de uma casa:  
+        ele não coloca cor, estilo ou beleza.  
+        Ele apenas monta as paredes, portas e janelas.
+      </p>
+
+      <h2>Como o HTML funciona?</h2>
+      <p>
+        O HTML usa <strong>tags</strong>.  
+        Uma tag é como um comando que diz ao navegador o que aquele trecho representa: título, texto, imagem, etc.
+      </p>
+
+      <h3>Exemplo de tag:</h3>
+      <pre>
+&lt;p&gt;Este é um parágrafo&lt;/p&gt;
+      </pre>
+
+      <h2>Estrutura básica de uma página HTML</h2>
+      <p>Todo arquivo HTML começa assim:</p>
+
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    Conteúdo da página aqui!
+&lt;/body&gt;
+
+&lt;/html&gt;
+      </pre>
+
+      <p>
+        • O <strong>head</strong> contém informações sobre a página  
+        • O <strong>title</strong> é o nome que aparece na aba do navegador  
+        • O <strong>body</strong> é onde fica tudo o que aparece na tela
+      </p>
+
+      <h2>Principais tags HTML</h2>
+
+      <h3>1. Títulos</h3>
+      <p>Usamos <strong>h1 a h6</strong>.</p>
+      <pre>
+&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+      </pre>
+
+      <h3>2. Parágrafos</h3>
+      <pre>
+&lt;p&gt;Este é um texto comum.&lt;/p&gt;
+      </pre>
+
+      <h3>3. Imagens</h3>
+      <p>A imagem precisa do caminho do arquivo:</p>
+      <pre>
+&lt;img src="minha_foto.png" alt="Descrição da imagem"&gt;
+      </pre>
+
+      <h3>4. Links</h3>
+      <p>Links levam a outra página:</p>
+      <pre>
+&lt;a href="https://google.com"&gt;Ir ao Google&lt;/a&gt;
+      </pre>
+
+      <h3>5. Listas</h3>
+
+      <p><strong>Lista com pontinhos (ul):</strong></p>
+      <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+      </pre>
+
+      <p><strong>Lista numerada (ol):</strong></p>
+      <pre>
+&lt;ol&gt;
+    &lt;li&gt;Passo 1&lt;/li&gt;
+    &lt;li&gt;Passo 2&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+
+      <h2>Exemplo completo de página simples</h2>
+
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Minha Primeira Página&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Bem-vindo!&lt;/h1&gt;
+
+    &lt;p&gt;Esta é a minha primeira página HTML.&lt;/p&gt;
+
+    &lt;h2&gt;Coisas que eu gosto:&lt;/h2&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;Tecnologia&lt;/li&gt;
+        &lt;li&gt;Música&lt;/li&gt;
+        &lt;li&gt;Jogos&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <h2>Por que aprender HTML?</h2>
+      <ul>
+        <li>É a base de qualquer site</li>
+        <li>É fácil para iniciantes</li>
+        <li>Está em tudo: blogs, redes sociais, sistemas web</li>
+        <li>É o primeiro passo para aprender CSS e JavaScript</li>
+      </ul>
+
+      <p><strong>Depois de dominar HTML, você será capaz de criar páginas completas e personalizadas!</strong></p>
+
+    </section>
+
+    <a class="voltar-niveis" href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
+
+  </main>
+
   {% include 'footer.html' %}
+
 </body>
 </html>
