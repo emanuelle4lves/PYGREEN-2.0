@@ -2,10 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Módulo {{ num }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo — Introdução ao CSS</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
+
+<body class="modulo-{{ num }}">
 
   <header>
     <div class="header-container">
@@ -14,6 +16,7 @@
       <nav class="navegador">
         <ul>
           <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('niveis') }}">Níveis</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
@@ -21,10 +24,141 @@
     </div>
   </header>
 
-  <h1>🌿 Bem-vindo ao Módulo {{ num }}</h1>
-  <p>Aqui vai o conteúdo do módulo {{ num }}.</p>
+  <main class="conteudo-modulo">
+    <h1 class="title-modulos">🌿 Bem-vindo ao Módulo 4</h1>
+    <p class="subtitulo-modulo">
+      Agora que você já conhece o HTML, é hora de aprender como deixar suas páginas bonitas!  
+      O CSS é a linguagem responsável por adicionar cores, fontes, espaçamentos, posicionamento e todo o visual de um site.
+      Neste módulo, você vai entender como estilizar qualquer elemento da sua página.
+    </p>
 
-  <a href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
+    <section>
+
+      <h2>O que é CSS?</h2>
+      <p>
+        CSS significa <strong>Cascading Style Sheets</strong> (Folhas de Estilo em Cascata).  
+        Ele é a “maquiagem” do site: torna seu projeto bonito, organizado e agradável de navegar.
+      </p>
+
+      <p>
+        Se o HTML é a estrutura da casa, o CSS é a pintura, os móveis e a decoração que deixam tudo com cara de lar.
+      </p>
+
+      <h2>Como o CSS funciona?</h2>
+      <p>
+        O CSS funciona através de <strong>seletores</strong>, que indicam qual elemento você quer estilizar,
+        e <strong>propriedades</strong>, que dizem qual estilo aplicar.
+      </p>
+
+      <h3>Exemplo básico:</h3>
+      <pre>
+p {
+    color: blue;
+    font-size: 18px;
+}
+      </pre>
+
+      <h2>Formas de usar CSS</h2>
+
+      <h3>1. CSS Inline</h3>
+      <pre>
+&lt;p style="color: red;"&gt;Texto em vermelho&lt;/p&gt;
+      </pre>
+
+      <h3>2. CSS Interno (dentro do &lt;style&gt;)</h3>
+      <pre>
+&lt;style&gt;
+  h1 {
+    color: green;
+  }
+&lt;/style&gt;
+      </pre>
+
+      <h3>3. CSS Externo (arquivo .css) — o mais usado</h3>
+      <pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+      </pre>
+
+      <p>
+        Essa é a forma profissional: você separa estrutura e estilo.
+      </p>
+
+      <h2>Estrutura básica de um arquivo CSS</h2>
+
+      <pre>
+selector {
+    propriedade: valor;
+}
+      </pre>
+
+      <h3>Exemplo:</h3>
+      <pre>
+body {
+    background-color: #f0f0f0;
+    font-family: Arial;
+}
+      </pre>
+
+      <h2>Principais propriedades do CSS</h2>
+
+      <h3>1. Cores</h3>
+      <pre>
+color: blue;
+background-color: #222;
+      </pre>
+
+      <h3>2. Fontes</h3>
+      <pre>
+font-size: 20px;
+font-family: Verdana;
+font-weight: bold;
+      </pre>
+
+      <h3>3. Espaçamento</h3>
+      <pre>
+margin: 20px;
+padding: 10px;
+      </pre>
+
+      <h3>4. Bordas</h3>
+      <pre>
+border: 2px solid black;
+border-radius: 10px;
+      </pre>
+
+      <h3>5. Layout</h3>
+      <pre>
+display: flex;
+justify-content: center;
+text-align: center;
+      </pre>
+
+      <h2>Exemplo completo de CSS aplicado</h2>
+
+      <pre>
+/* style.css */
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+      </pre>
+
+      <p>
+        Com o CSS, você transforma páginas simples em interfaces profissionais e modernas!
+      </p>
+
+    </section>
+
+    <a class="voltar-niveis" href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
+
+  </main>
+
   {% include 'footer.html' %}
+
 </body>
 </html>
