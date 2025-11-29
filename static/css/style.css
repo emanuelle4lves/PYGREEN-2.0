@@ -547,7 +547,7 @@ figcaption {
 /* PAGINA DO MODULO 1 */
 
 .modulo-1 {
-  background-color: #f5eecb;
+  background-image: url("/static/img/modulo-1.png");
   min-height: 100vh;
   padding-top: 80px; /* espaço para o header fixo */
   font-family: 'Slackey', cursive;
@@ -654,7 +654,7 @@ figcaption {
   line-height: 1.6;
   font-size: 1.2rem;
   color: #333;
-  background: #ffffffcc;
+  background: #fdf2c784;
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
