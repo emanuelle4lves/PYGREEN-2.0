@@ -5,8 +5,8 @@
   <title>Módulo {{ num }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
 
+<body class="modulo-5">
   <header>
     <div class="header-container">
       <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
@@ -21,10 +21,59 @@
     </div>
   </header>
 
-  <h1>🌿 Bem-vindo ao Módulo {{ num }}</h1>
-  <p>Aqui vai o conteúdo do módulo {{ num }}.</p>
+  <main class="conteudo-modulo">
+    <h1>🌿 Módulo 5 — Projeto Final</h1>
+    <p>Agora que você concluiu os módulos anteriores, chegou a hora de criar seu primeiro site!</p>
 
-  <a href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
+    <h2>Projeto Final: Minha Página Pessoal</h2>
+    <p>Seu objetivo é criar uma <strong>Página Pessoal</strong> usando apenas <strong>HTML</strong> e <strong>CSS</strong>.</p>
+
+    <h3>O que o site deve ter</h3>
+    <ul>
+      <li><strong>1. Página Inicial (index.html)</strong> – título, sua foto/avatar, apresentação e links.</li>
+      <li><strong>2. Página "Sobre Mim" (sobre.html)</strong> – informações sobre você.</li>
+      <li><strong>3. Página "Contato" (contato.html)</strong> – formulário simples.</li>
+      <li><strong>4. Arquivo style.css</strong> – estilização de todas as páginas.</li>
+    </ul>
+
+    <h3>Estrutura obrigatória</h3>
+    <pre>
+projeto-final/
+│
+├── index.html
+├── sobre.html
+├── contato.html
+└── style.css
+    </pre>
+
+    <h3>Regras</h3>
+    <ul>
+      <li>Use apenas HTML e CSS.</li>
+      <li>Mantenha o mesmo estilo visual em todas as páginas.</li>
+      <li>Os links entre as páginas devem funcionar.</li>
+    </ul>
+
+    <h3>Avaliação</h3>
+    <ul>
+      <li>Organização dos arquivos – 20 pts</li>
+      <li>HTML estruturado – 20 pts</li>
+      <li>CSS funcionando – 20 pts</li>
+      <li>Criatividade – 20 pts</li>
+      <li>Clareza do conteúdo – 20 pts</li>
+    </ul>
+
+    <h3>Dicas</h3>
+    <ul>
+      <li>Desenhe primeiro no papel.</li>
+      <li>Escolha cores simples.</li>
+      <li>Use header, main e footer.</li>
+    </ul>
+
+    <p>Este é o primeiro passo! No próximo ano, o site irá evoluir usando <strong>Python + Flask</strong>.</p>
+
+    <a href="{{ url_for('niveis') }}" class="voltar">⬅ Voltar aos níveis</a>
+  </main>
+
   {% include 'footer.html' %}
 </body>
 </html>
