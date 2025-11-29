@@ -2,11 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Módulo 2 - Básico de Python</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body>
+<body class="modulo-{{ num }}">
 
   <header>
     <div class="header-container">
@@ -15,12 +16,142 @@
       <nav class="navegador">
         <ul>
           <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('niveis') }}">Níveis</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <main class="conteudo-modulo">
+    <h1 class="title-modulos">🌿 Bem-vindo ao Módulo 2</h1>
+
+    <p class="subtitulo-modulo">
+      Aprenda os fundamentos iniciais da linguagem Python de forma clara e objetiva.</p>
+
+    <section>
+      
+      <h2>1. Variáveis e Tipos de Dados</h2>
+      <p>Variáveis são espaços onde guardamos informações que podem ser usadas ao longo do código.</p>
+
+      <ul>
+        <li><strong>int</strong> — números inteiros</li>
+        <li><strong>float</strong> — números decimais</li>
+        <li><strong>str</strong> — textos</li>
+        <li><strong>bool</strong> — verdadeiro ou falso</li>
+      </ul>
+
+      <pre><code>nome = "Ana"
+idade = 20
+altura = 1.70
+</code></pre>
+    </section>
+
+
+    <section>
+      <h2>2. Operadores</h2>
+      <p>Operadores permitem realizar cálculos e comparações.</p>
+
+      <p><strong>Aritméticos:</strong> +, -, *, /, //, %, **</p>
+      <p><strong>Comparação:</strong> ==, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+      <p><strong>Lógicos:</strong> and, or, not</p>
+    </section>
+
+
+    <section>
+      <h2>3. Estruturas Condicionais</h2>
+      <p>Permitem que o programa escolha diferentes caminhos dependendo de uma condição.</p>
+
+      <pre><code>if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")
+</code></pre>
+    </section>
+
+
+    <section>
+      <h2>4. Laços de Repetição</h2>
+      <p>Loops permitem repetir ações automaticamente.</p>
+
+      <pre><code>for i in range(5):
+    print(i)</code></pre>
+
+      <pre><code>contador = 0
+while contador &lt; 5:
+    print(contador)
+    contador += 1</code></pre>
+    </section>
+
+    <section>
+      <h2>5. Listas e Tuplas</h2>
+      <p><strong>Listas:</strong> coleções de dados que podem ser alteradas.</p>
+
+      <pre><code>frutas = ["maçã", "banana"]
+frutas.append("uva")</code></pre>
+
+      <p><strong>Tuplas:</strong> semelhantes às listas, porém imutáveis.</p>
+
+      <pre><code>coordenadas = (10, 20)</code></pre>
+    </section>
+
+
+    <section>
+      <h2>6. Funções</h2>
+      <p>Funções são blocos de código criados para realizar tarefas específicas.</p>
+
+      <pre><code>def saudacao(nome):
+    return f"Olá, {nome}!"</code></pre>
+    </section>
+
+    <section>
+      <h2>7. Dicionários</h2>
+      <p>Guardam informações no formato chave → valor.</p>
+
+      <pre><code>pessoa = {
+    "nome": "Ana",
+    "idade": 25
+}
+
+print(pessoa["nome"])</code></pre>
+    </section>
+
+
+    <section>
+      <h2>8. Manipulação de Strings</h2>
+      <p>Strings são textos e podem ser manipuladas de várias maneiras.</p>
+
+      <pre><code>texto = "Python é incrível"
+print(texto.upper())
+print(texto.lower())
+print(texto.split())</code></pre>
+    </section>
+
+
+    <section>
+      <h2>9. Entrada e Saída de Dados</h2>
+      <p><strong>Entrada:</strong> recebe informações do usuário.</p>
+
+      <pre><code>nome = input("Digite seu nome: ")</code></pre>
+
+      <p><strong>Saída:</strong> exibe mensagens.</p>
+
+      <pre><code>print("Olá, mundo!")</code></pre>
+    </section>
+
+
+    <section>
+      <h2>10. Comentários</h2>
+      <p>Comentários servem para explicar o código e não são executados.</p>
+
+      <pre><code># Isso é um comentário
+print("Código funcionando!")</code></pre>
+    </section>
+
+  </main>
+
+</body>
+</html>
 
 </body>
 </html>
