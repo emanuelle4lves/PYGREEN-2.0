@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Footer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-<footer class="footer">
-  <p>&copy; 2025 PyGreen 2.0. Todos os direitos reservados.</p>
-  <div class="footer-links">
-    <a href="{{ url_for('index') }}">Home</a> | 
-    <a href="#">Contato</a> | 
-    <a href="#">Sobre</a>
-  </div>
-  <p class="footer-slogan">🌱 Aprenda programação de forma divertida!</p>
-</footer>
+    <footer class="footer">
+        <p>&copy; 2025 PyGreen 2.0. Todos os direitos reservados.</p>
+        <nav class="footer-nav">
+            <a href="{{ url_for('index') }}">Home</a> | 
+            <a href="{{ url_for('contato') }}">Contato</a> | 
+            <a href="{{ url_for('sobre') }}">Sobre</a>
+        </nav>
+        <p class="footer-slogan">🌱 Aprenda programação de forma divertida!</p>
+    </footer>
 </body>
 </html>

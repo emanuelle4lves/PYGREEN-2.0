@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Módulo-3 — Introdução à HTML</title>
+  <title>Módulo 3 — Introdução à HTML</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body class="modulo-{{ num }}">
+<body class="pagina-modulo modulo-3">
 
   <header>
     <div class="header-container">
       <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
       <img class="pygreen" src="{{ url_for('static', filename='img/nome_pygreen.png') }}" alt="Pygreen Nome" height="50"/>
       <nav class="navegador">
-        <ul>
+        <ul class="navbar">
           <li><a href="{{ url_for('index') }}">Home</a></li>
           <li><a href="{{ url_for('niveis') }}">Níveis</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="{{ url_for('contato') }}">Contato</a></li>
+          <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
         </ul>
       </nav>
     </div>
@@ -34,33 +34,21 @@
     </p>
 
     <section>
-
       <h2>O que é HTML?</h2>
       <p>
         HTML significa <strong>HyperText Markup Language</strong>.  
         É a linguagem usada para criar o "esqueleto” de um site, ou seja, definir onde vai cada coisa.
       </p>
 
-      <p>
-        Pense no HTML como a estrutura de uma casa:  
-        ele não coloca cor, estilo ou beleza.  
-        Ele apenas monta as paredes, portas e janelas.
-      </p>
+      <p>Pense no HTML como a estrutura de uma casa: ele não coloca cor, estilo ou beleza. Ele apenas monta as paredes, portas e janelas.</p>
 
       <h2>Como o HTML funciona?</h2>
-      <p>
-        O HTML usa <strong>tags</strong>.  
-        Uma tag é como um comando que diz ao navegador o que aquele trecho representa: título, texto, imagem, etc.
-      </p>
+      <p>O HTML usa <strong>tags</strong>. Uma tag é como um comando que diz ao navegador o que aquele trecho representa: título, texto, imagem, etc.</p>
 
       <h3>Exemplo de tag:</h3>
-      <pre>
-&lt;p&gt;Este é um parágrafo&lt;/p&gt;
-      </pre>
+      <pre>&lt;p&gt;Este é um parágrafo&lt;/p&gt;</pre>
 
       <h2>Estrutura básica de uma página HTML</h2>
-      <p>Todo arquivo HTML começa assim:</p>
-
       <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -77,39 +65,28 @@
       </pre>
 
       <p>
-        • O <strong>head</strong> contém informações sobre a página  
-        • O <strong>title</strong> é o nome que aparece na aba do navegador  
+        • O <strong>head</strong> contém informações sobre a página<br>
+        • O <strong>title</strong> é o nome que aparece na aba do navegador<br>
         • O <strong>body</strong> é onde fica tudo o que aparece na tela
       </p>
 
       <h2>Principais tags HTML</h2>
-
       <h3>1. Títulos</h3>
-      <p>Usamos <strong>h1 a h6</strong>.</p>
       <pre>
 &lt;h1&gt;Título Principal&lt;/h1&gt;
 &lt;h2&gt;Subtítulo&lt;/h2&gt;
       </pre>
 
       <h3>2. Parágrafos</h3>
-      <pre>
-&lt;p&gt;Este é um texto comum.&lt;/p&gt;
-      </pre>
+      <pre>&lt;p&gt;Este é um texto comum.&lt;/p&gt;</pre>
 
       <h3>3. Imagens</h3>
-      <p>A imagem precisa do caminho do arquivo:</p>
-      <pre>
-&lt;img src="minha_foto.png" alt="Descrição da imagem"&gt;
-      </pre>
+      <pre>&lt;img src="minha_foto.png" alt="Descrição da imagem"&gt;</pre>
 
       <h3>4. Links</h3>
-      <p>Links levam a outra página:</p>
-      <pre>
-&lt;a href="https://google.com"&gt;Ir ao Google&lt;/a&gt;
-      </pre>
+      <pre>&lt;a href="https://google.com"&gt;Ir ao Google&lt;/a&gt;</pre>
 
       <h3>5. Listas</h3>
-
       <p><strong>Lista com pontinhos (ul):</strong></p>
       <pre>
 &lt;ul&gt;
@@ -127,7 +104,6 @@
       </pre>
 
       <h2>Exemplo completo de página simples</h2>
-
       <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -138,11 +114,9 @@
 &lt;body&gt;
 
     &lt;h1&gt;Bem-vindo!&lt;/h1&gt;
-
     &lt;p&gt;Esta é a minha primeira página HTML.&lt;/p&gt;
 
-    &lt;h2&gt;Coisas que eu gosto:&lt;/h2&gt;
-
+    &lt;h2&gt;Coisas que eu gosto:&lt;/h2;
     &lt;ul&gt;
         &lt;li&gt;Tecnologia&lt;/li&gt;
         &lt;li&gt;Música&lt;/li&gt;
@@ -162,7 +136,6 @@
       </ul>
 
       <p><strong>Depois de dominar HTML, você será capaz de criar páginas completas e personalizadas!</strong></p>
-
     </section>
 
     <a class="voltar-niveis" href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>

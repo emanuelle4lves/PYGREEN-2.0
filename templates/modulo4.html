@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Módulo — Introdução ao CSS</title>
+  <title>Módulo 4 — Introdução ao CSS</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body class="modulo-{{ num }}">
+<body class="pagina-modulo modulo-4">
 
   <header>
     <div class="header-container">
       <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
       <img class="pygreen" src="{{ url_for('static', filename='img/nome_pygreen.png') }}" alt="Pygreen Nome" height="50"/>
       <nav class="navegador">
-        <ul>
+        <ul class="navbar">
           <li><a href="{{ url_for('index') }}">Home</a></li>
           <li><a href="{{ url_for('niveis') }}">Níveis</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="{{ url_for('contato') }}">Contato</a></li>
+          <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
         </ul>
       </nav>
     </div>
@@ -33,16 +33,13 @@
     </p>
 
     <section>
-
       <h2>O que é CSS?</h2>
       <p>
         CSS significa <strong>Cascading Style Sheets</strong> (Folhas de Estilo em Cascata).  
         Ele é a “maquiagem” do site: torna seu projeto bonito, organizado e agradável de navegar.
       </p>
 
-      <p>
-        Se o HTML é a estrutura da casa, o CSS é a pintura, os móveis e a decoração que deixam tudo com cara de lar.
-      </p>
+      <p>Se o HTML é a estrutura da casa, o CSS é a pintura, os móveis e a decoração que deixam tudo com cara de lar.</p>
 
       <h2>Como o CSS funciona?</h2>
       <p>
@@ -59,11 +56,8 @@ p {
       </pre>
 
       <h2>Formas de usar CSS</h2>
-
       <h3>1. CSS Inline</h3>
-      <pre>
-&lt;p style="color: red;"&gt;Texto em vermelho&lt;/p&gt;
-      </pre>
+      <pre>&lt;p style="color: red;"&gt;Texto em vermelho&lt;/p&gt;</pre>
 
       <h3>2. CSS Interno (dentro do &lt;style&gt;)</h3>
       <pre>
@@ -75,16 +69,10 @@ p {
       </pre>
 
       <h3>3. CSS Externo (arquivo .css) — o mais usado</h3>
-      <pre>
-&lt;link rel="stylesheet" href="style.css"&gt;
-      </pre>
-
-      <p>
-        Essa é a forma profissional: você separa estrutura e estilo.
-      </p>
+      <pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+      <p>Essa é a forma profissional: você separa estrutura e estilo.</p>
 
       <h2>Estrutura básica de um arquivo CSS</h2>
-
       <pre>
 selector {
     propriedade: valor;
@@ -100,7 +88,6 @@ body {
       </pre>
 
       <h2>Principais propriedades do CSS</h2>
-
       <h3>1. Cores</h3>
       <pre>
 color: blue;
@@ -134,7 +121,6 @@ text-align: center;
       </pre>
 
       <h2>Exemplo completo de CSS aplicado</h2>
-
       <pre>
 /* style.css */
 h1 {
@@ -148,14 +134,10 @@ p {
 }
       </pre>
 
-      <p>
-        Com o CSS, você transforma páginas simples em interfaces profissionais e modernas!
-      </p>
-
+      <p>Com o CSS, você transforma páginas simples em interfaces profissionais e modernas!</p>
     </section>
 
     <a class="voltar-niveis" href="{{ url_for('niveis') }}">⬅ Voltar aos níveis</a>
-
   </main>
 
   {% include 'footer.html' %}

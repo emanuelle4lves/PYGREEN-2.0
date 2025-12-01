@@ -10,7 +10,7 @@ def ConectarBD():
     try:
         cnx = connect(
             user='root',
-            password='labinfo',
+            password='1406',
             host='127.0.0.1',
             database='pygreen2'
         )
@@ -52,6 +52,7 @@ def ConsultarBD(sql, dados=None):
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 @app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
@@ -117,6 +118,16 @@ def modulo(num):
     if num < 1 or num > 5:
         return "Módulo não encontrado", 404
     return render_template(f'modulo{num}.html', num=num)
+
+
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
+@app.route('/contato')
+def contato():
+    return render_template('contato.html')
+
 
 # --------------------- Executar ---------------------
 if __name__ == '__main__':

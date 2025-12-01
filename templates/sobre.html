@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o PyGreen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
-    
+<body class="pagina-sobre">
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo do Pygreen" />
+      <img class="pygreen" src="{{ url_for('static', filename='img/nome_pygreen.png') }}" alt="Nome Pygreen" height="50"/>
+
+      <nav class="navegador">
+        <ul class="navbar">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('contato') }}">Contato</a></li>
+          <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="sobre">
+    <h1 class="sobre">🌿 Sobre o PyGreen</h1>
+
+    <p>
+      O PyGreen nasceu para tornar o aprendizado de programação leve, divertido e acessível.
+      Aqui, apresentamos os desenvolvedores que fazem a plataforma acontecer!
+    </p>
+
+    <p>
+      Nosso trio deu continuidade ao PyGreen de 2024, mas reformulamos totalmente a interface, as funcionalidades
+      e a experiência do usuário, trazendo uma versão mais moderna e intuitiva da plataforma.
+    </p>
+
+    <div class="cards-container">
+      <!-- Desenvolvedor 1 -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/dev1.jpg') }}" alt="Desenvolvedor 1" class="card-img">
+        <h3>Eloisa Lima</h3>
+      </div>
+
+      <!-- Desenvolvedor 2 -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/dev2.jpg') }}" alt="Desenvolvedor 2" class="card-img">
+        <h3>Emanuelle Alves</h3>
+      </div>
+
+      <!-- Desenvolvedor 3 -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/dev3.jpg') }}" alt="Desenvolvedor 3" class="card-img">
+        <h3>Saul Reis</h3>
+      </div>
+    </div>
+
+    <p class="obrigado" style="text-align:center; margin-top:30px;">
+      🌱 <strong>Obrigado por conhecer nossa equipe!</strong> Juntos, vamos crescer e aprender cada vez mais.
+    </p>
+
+    <div style="text-align:center; margin-top:20px;">
+      <a href="{{ url_for('index') }}" class="voltar-niveis">⬅ Voltar à Página Inicial</a>
+    </div>
+  </main>
+
+  {% include 'footer.html' %}
+
 </body>
 </html>

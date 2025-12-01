@@ -7,22 +7,21 @@
 </head>
 <body class="pagina-modulos">
 
-  <!-- HEADER igual ao das outras páginas -->
-  <header>
-    <div class="header-container">
-      <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
-      <img class="pygreen" src="{{ url_for('static', filename='img/nome_pygreen.png') }}" alt="Pygreen Nome" height="50"/>
-      
-      <nav class="navegador">
-        <ul>
-          <li><a href="{{ url_for('index') }}">Home</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre</a></li>
-        </ul>
-      </nav>
-    
-    </div>
-  </header>
+<header>
+  <div class="header-container">
+    <img class="logo-pygreen" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
+    <img class="pygreen" src="{{ url_for('static', filename='img/nome_pygreen.png') }}" alt="Pygreen Nome" height="50"/>
+    <nav class="navegador">
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('niveis') }}">Níveis</a></li>
+        <li><a href="{{ url_for('contato') }}">Contato</a></li>
+        <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <main class="conteudo">
     <!-- FLASHS do Flask -->
