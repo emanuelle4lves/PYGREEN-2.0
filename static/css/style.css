@@ -1525,7 +1525,7 @@ figcaption {
 }
 
 .voltar-niveis:hover {
-  background: #2b5329;
+  background: #112410;
 }
 
 /* Footer */
@@ -1555,16 +1555,16 @@ figcaption {
 }
 
 .pagina-sobre {
-  background-image: url("/static/img/modulo-3.png");
+  background-image: url("/static/img/pagina-sobre.png");
   min-height: 100vh;
   padding-top: 80px;
   font-family: 'Slackey', cursive;
-  color: #2b5329;
+  color: #e8ffe7;
 }
 
 .pagina-sobre header {
-  box-shadow: 0px 0px 20px rgba(24, 85, 25, 0.649);
-  background: #054215e6; 
+  box-shadow: 0px 0px 20px rgba(91, 159, 93, 0.649);
+  background: #0d3317e6; 
   position: fixed;
   width: 100%;
   height: 60px;
@@ -1604,12 +1604,104 @@ figcaption {
 }
 
 .pagina-sobre .navbar li a {
-  color: white;
+  color: rgb(195, 195, 195);
   text-align: center;
   padding: 14px 15px;
   text-decoration: none;
 }
 
 .pagina-sobre .navbar li a:hover {
-  background-color: #294523;
+  background-color: #1c2a19;
+}
+
+/* ================= CARDS ================= */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.card {
+  background-color: rgba(65, 99, 58, 0.85); /* fundo inicial */
+  color: #e1e1e1;
+  font-family: 'Slackey', cursive;
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(15, 1, 1, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(15, 1, 1, 0.6);
+  background-color: rgba(65, 99, 58, 1); /* fundo totalmente opaco */
+}
+
+
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 3px solid #3aff6c;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #699e5d;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #e1f1dd;
+}
+
+/* Botão dentro do card */
+.card-content .card-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #223a1d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content .card-btn:hover {
+  background-color: #1c251a;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .cards-container {
+    gap: 20px;
+  }
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+  .card-content p {
+    font-size: 0.95rem;
+  }
 }

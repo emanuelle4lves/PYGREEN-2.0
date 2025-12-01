@@ -10,7 +10,7 @@ def ConectarBD():
     try:
         cnx = connect(
             user='root',
-            password='labinfo',
+            password='1406',
             host='127.0.0.1',
             database='pygreen2'
         )
