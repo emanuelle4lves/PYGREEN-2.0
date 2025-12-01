@@ -53,14 +53,7 @@
 .pagina-inicial .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
-}
-
-.pagina-inicial .pygreen {
-  max-width: 100%;
-  height: auto;
-  width:100px;
-  margin-left: 10px;
+  width: 150px;
 }
 
 .pagina-inicial .content-container {
@@ -180,15 +173,9 @@
 .pagina-login .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
+  width: 150px;
 }
 
-.pagina-login .pygreen {
-  max-width: 100%;
-  height: auto;
-  width:100px;
-  margin-left: 10px;
-}
 
 .pagina-login ul {
   list-style-type: none;
@@ -364,15 +351,9 @@
 .pagina-modulos .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
+  width: 150px;
 }
 
-.pagina-modulos .pygreen {
-  max-width: 100%;
-  height: auto;
-  width:100px;
-  margin-left: 10px;
-}
 
 .pagina-modulos .navegador ul {
   list-style-type: none;
@@ -491,7 +472,7 @@ figcaption {
 }
 
 .footer {
-  width: 100.9%; /* Não pergunte, só aceite */
+  width: 100.7%; /* Não pergunte, só aceite */
   background-color: #054215e6;
   color: white;
   box-sizing: border-box;
@@ -602,15 +583,9 @@ figcaption {
 .modulo-1 .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
+  width: 150px;
 }
 
-.modulo-1 .pygreen {
-  max-width: 100%;
-  height: auto;
-  width:100px;
-  margin-left: 10px;
-}
 
 .modulo-1 .navegador ul {
   list-style-type: none;
@@ -814,14 +789,7 @@ figcaption {
 .modulo-2 .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
-}
-
-.modulo-2 .pygreen {
-  max-width: 100%;
-  height: auto;
-  width:100px;
-  margin-left: 10px;
+  width: 150px;
 }
 
 .modulo-2 .navegador ul {
@@ -1027,14 +995,7 @@ figcaption {
 .modulo-3 .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
-}
-
-.modulo-3 .pygreen {
-  max-width: 100%;
-  height: auto;
-  width:100px;
-  margin-left: 10px;
+  width: 150px;
 }
 
 .modulo-3 .navegador ul {
@@ -1240,15 +1201,9 @@ figcaption {
 .modulo-4 .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
+  width: 150px;
 }
 
-.modulo-4 .pygreen {
-  max-width: 100%;
-  height: auto;
-  width:100px;
-  margin-left: 10px;
-}
 
 .modulo-4 .navegador ul {
   list-style-type: none;
@@ -1443,15 +1398,10 @@ figcaption {
 .modulo-5 .logo-pygreen {
   max-width: 100%;
   height: auto;
-  width: 50px;
+  width: 150px;
 }
 
-.modulo-5 .pygreen {
-  max-width: 100%;
-  height: auto;
-  width: 100px;
-  margin-left: 10px;
-}
+
 
 .modulo-5 .navegador ul {
   list-style-type: none;
@@ -1580,17 +1530,14 @@ figcaption {
 
 /* Footer */
 .footer {
-  width: 100.9%;
+  width: 100.7%;
   background-color: #054215e6;
   color: white;
   box-sizing: border-box;
-  padding: 20px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin: -10px;
 }
 
 .footer a {
@@ -1607,3 +1554,62 @@ figcaption {
   color: #e1f1dd;
 }
 
+.pagina-sobre {
+  background-image: url("/static/img/modulo-3.png");
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family: 'Slackey', cursive;
+  color: #2b5329;
+}
+
+.pagina-sobre header {
+  box-shadow: 0px 0px 20px rgba(24, 85, 25, 0.649);
+  background: #054215e6; 
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.pagina-sobre .header-container {
+  background-color: #054215;
+  box-shadow: none;         
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.pagina-sobre .logo-pygreen {
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+}
+
+.pagina-sobre .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.pagina-sobre .navbar li a {
+  color: white;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+
+.pagina-sobre .navbar li a:hover {
+  background-color: #294523;
+}
