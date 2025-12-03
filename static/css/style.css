@@ -120,16 +120,6 @@
   background-color: #294523;
 }
 
-.pagina-login footer,
-.footer {
-  width: 100%;            
-  background-color: #054215e6; 
-  color: white;
-  text-align: center;  
-  padding: 20px 10px;   
-  margin-top: 40px;      
-}
-
 
 /*================== PÁGINA DE LOGIN ===================*/
 .pagina-login {
@@ -291,14 +281,6 @@
 .flash.danger {
   background-color: #c0392b;
   color: white;
-}
-.pagina-login footer {
-  width: 100%;
-  text-align: center;
-  padding: -20px 10px;
-  background-color: #054215e6;
-  color: white;
-  box-sizing: border-box;
 }
 /* =================== PÁGINA DE MÓDULOS =================== */
 .pagina-modulos {
@@ -472,7 +454,7 @@ figcaption {
 }
 
 .footer {
-  width: 100.7%; /* Não pergunte, só aceite */
+  width: 100%;
   background-color: #054215e6;
   color: white;
   box-sizing: border-box;
@@ -712,19 +694,6 @@ figcaption {
   background: #2b5329;
 }
 
-.footer {
-  width: 100.9%; /* Não pergunte, só aceite */
-  background-color: #054215e6;
-  color: white;
-  box-sizing: border-box;
-  padding: 20px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;  
-  align-items: center;    
-  gap: 10px;             
-  margin: -10px;
-}
 
 .footer a {
   color: #74b865;
@@ -918,20 +887,6 @@ figcaption {
   background: #2b5329;
 }
 
-/* Footer */
-.footer {
-  width: 100.9%;
-  background-color: #054215e6;
-  color: white;
-  box-sizing: border-box;
-  padding: 20px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;  
-  align-items: center;    
-  gap: 10px;             
-  margin: -10px;
-}
 
 .footer a {
   color: #74b865;
@@ -1121,21 +1076,6 @@ figcaption {
 
 .voltar-niveis:hover {
   background: #2b5329;
-}
-
-/* Footer */
-.footer {
-  width: 100.9%;
-  background-color: #054215e6;
-  color: white;
-  box-sizing: border-box;
-  padding: 20px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;  
-  align-items: center;    
-  gap: 10px;             
-  margin: -10px;
 }
 
 .footer a {
@@ -1330,21 +1270,6 @@ figcaption {
   background: #2b5329;
 }
 
-/* Footer */
-.footer {
-  width: 100.9%;
-  background-color: #054215e6;
-  color: white;
-  box-sizing: border-box;
-  padding: 20px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;  
-  align-items: center;    
-  gap: 10px;             
-  margin: -10px;
-}
-
 .footer a {
   color: #74b865;
   text-decoration: none;
@@ -1528,17 +1453,6 @@ figcaption {
   background: #112410;
 }
 
-/* Footer */
-.footer {
-  width: 100.7%;
-  background-color: #054215e6;
-  color: white;
-  box-sizing: border-box;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .footer a {
   color: #74b865;
